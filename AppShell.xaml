@@ -7,9 +7,17 @@
     Shell.FlyoutBehavior="Disabled"
     Title="AppPostService">
 
-    <ShellContent
-        Title="Posts"
+    <TabBar>
+
+        <ShellContent
+            Title="Posts"
+            ContentTemplate="{DataTemplate local:PostView}"
+            Route="MainPage" />
+
+        <ShellContent
+        Title="To-dos"
         ContentTemplate="{DataTemplate local:TodosView}"
-        Route="MainPage" />
-    
+        Route="MainPage" /> 
+    </TabBar>
 </Shell>
+
